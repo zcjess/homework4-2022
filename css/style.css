@@ -1,0 +1,72 @@
+body{
+	background-image: url("../images/concrete_seamless.png");
+    background-color: #f1f1f1;
+    font-family: 'Poppins', serif;
+}
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.nav_links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/*#4*/
+.nav_items:active {
+	color: #551A8B;
+	text-decoration: underline;
+}
+.card > header {
+    background-color: #288088;
+    border: 2px solid #45ADAD;
+    padding: 20px 0 20px 0;
+    border-radius: 50px 50px 0 0;
+}
+.pricing {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.card {
+	flex-basis: 450px;
+	border-radius: 50px 50px 0 0;
+
+}
+.gallery img {
+	border: 10px solid #50C7C7;
+	margin: 10px;
+	width: 300px;
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#logo {
+	display: block;
+	margin: 0 auto;
+	animation: ani 5s;
+	width: 475px;
+}
+@keyframes ani {
+	from {width: 25px; opacity: 0}
+	to {width: 475px; opacity: 1}
+
+}
+@media screen and (min-width: 900px){
+	header {
+
+	}
+	.nav_links {
+
+	}
+	.card {
+
+	}
+}
+@media screen and (prefers-reduced-motion: reduce){
+}
