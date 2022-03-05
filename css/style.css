@@ -15,7 +15,7 @@ header {
 }
 /*#4*/
 .nav_items:active {
-	color: #551A8B;
+	color: -webkit-link;
 	text-decoration: underline;
 }
 .card > header {
@@ -59,14 +59,63 @@ header {
 }
 @media screen and (min-width: 900px){
 	header {
-
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		position: sticky;
+		top: 0;
+		width: 100%;
+	}
+	main header {
+		position: static;
+	}
+	#logo {
+		margin-left: 0;
 	}
 	.nav_links {
-
+		flex-direction: row;
+	}
+	.pricing {
+		justify-content: center;
+		align-items: center;
 	}
 	.card {
-
+		flex-basis: 250px;
 	}
 }
 @media screen and (prefers-reduced-motion: reduce){
+	#logo {
+	animation: initial;
+	}
+}
+@media print {
+	body {
+		background-image: none;
+		font-family:Arial, Helvetica, sans-serif;
+	}
+	.nav_links {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	main header {
+		flex-direction: row;
+	}
+	.pricing {
+		align-items: flex-end;
+		flex-wrap: nowrap;
+	}
+	main li:nth-child(2)::after {
+  		content: "👍";
+	}
+	.card {
+		border: 2px solid #45ADDD;
+		flex-basis: 325px;
+	}
+	#gallery {
+		display: none;
+	}
+	.gallery {
+		display: none;
+	}
+
 }
