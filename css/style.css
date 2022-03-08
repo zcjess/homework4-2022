@@ -14,15 +14,17 @@ header {
 	align-items: center;
 }
 /*#4*/
-.nav_items:active {
-	color: -webkit-link;
-	text-decoration: underline;
+a {
+	color: #0000EE;
 }
 .card > header {
     background-color: #288088;
     border: 2px solid #45ADAD;
     padding: 20px 0 20px 0;
     border-radius: 50px 50px 0 0;
+}
+h4 {
+	text-align: center;
 }
 .pricing {
 	display: flex;
@@ -99,6 +101,9 @@ header {
 	}
 	main header {
 		flex-direction: row;
+	}
+	h4 {
+		text-align: left;
 	}
 	.pricing {
 		align-items: flex-end;
